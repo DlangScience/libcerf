@@ -4,13 +4,13 @@ libcerf
 Self-contained numeric library that provides an efficient and accurate implementation of complex error functions, along with Dawson, Faddeeva, and Voigt functions.
 
 ####Functions:
-* fadeeva (complex)
+* erf (complex)
+* erfc (complex)
 * erfcx (both)
 * erfi (both)
 * dawson (both)
 * voigt
-* erf (complex)
-* erfc (complex)
+* fadeeva (complex)
 
 
 ####Example:
