@@ -11,6 +11,7 @@ Self-contained numeric library that provides an efficient and accurate implement
 * dawson (both)
 * voigt
 * fadeeva (complex)
+* fadeevaIm (double)
 
 
 ####Example:
