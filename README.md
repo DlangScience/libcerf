@@ -25,6 +25,6 @@ assert(fabs((c.re - f)/f) < 1e-13);
 ```
 
 ####Links
-* D source code at [GitHub](http://github.com/9il/libcerf)
+* D source code on [GitHub](http://github.com/9il/libcerf)
 * Original [Faddeeva Package](http://ab-initio.mit.edu/wiki/index.php/Faddeeva_Package)
-* Original C [source code](http://github.com/9il/libcerf)
+* Original C [source code](http://apps.jcns.fz-juelich.de/doku//sc/libcerf)
