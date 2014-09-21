@@ -1,0 +1,12 @@
+{
+	"name": "libcerf",
+	"description": "Self-contained numeric library that provides an efficient and accurate implementation of complex error functions, along with Dawson, Faddeeva, and Voigt functions.",
+	"homepage": "http://github.com/9il/libcerf",
+	"copyright": "Copyright © 2012 Massachusetts Institute of Technology, © 2013 Forschungszentrum Jülich GmbH, © 2014 Ilya Yaroshenko",
+	"version": "1.4",
+	"authors": [
+		"Steven G. Johnson",
+		"Joachim Wuttke",
+		"Ilya Yaroshenkor,"
+	],
+}
