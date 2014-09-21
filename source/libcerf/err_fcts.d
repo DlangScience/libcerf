@@ -104,8 +104,6 @@ Dawson's integral for a real argument.
 */
 double dawson(double x) @safe @nogc nothrow
 {
-
-
     return spi2 * im_w_of_x(x);
 }
 
