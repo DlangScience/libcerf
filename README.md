@@ -3,7 +3,7 @@ libcerf
 
 Self-contained numeric library that provides an efficient and accurate implementation of complex error functions, along with Dawson, Faddeeva, and Voigt functions.
 
-####Functions:
+#### Functions:
 * erf (complex)
 * erfc (complex)
 * erfcx (both)
@@ -14,7 +14,7 @@ Self-contained numeric library that provides an efficient and accurate implement
 * fadeevaIm (double)
 
 
-####Example:
+#### Example:
 ```D
 import std.complex, std.math;
 import libcerf;
@@ -25,7 +25,7 @@ auto f = erfi(1.0);
 assert(fabs((c.re - f)/f) < 1e-13);
 ```
 
-####Links
-* D source code on [GitHub](http://github.com/9il/libcerf)
+#### Links
+* D source code on [GitHub](http://github.com/DlangScience/libcerf)
 * Original [Faddeeva Package](http://ab-initio.mit.edu/wiki/index.php/Faddeeva_Package)
 * Original C [source code](http://apps.jcns.fz-juelich.de/doku//sc/libcerf)
