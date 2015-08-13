@@ -67,7 +67,7 @@ double erfcx(in double x) @safe @nogc nothrow
     }
     else if(x < -26.7) return double.infinity;
     else if(x < -6.1)  return 2*exp(x*x);
-    else if(x.isNaN)   return double.nan;
+    else if(x.isNaN)   return x;
     else               return 2*exp(x*x) - erfcx_y100(400/(4-x));
 }
 
