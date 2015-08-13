@@ -1,0 +1,6 @@
+{
+	"name": "erfi",
+	"dependencies": {
+		"libcerf": {"path": "../../"}
+	}
+}
