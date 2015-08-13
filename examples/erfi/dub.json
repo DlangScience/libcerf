@@ -1,0 +1,9 @@
+{
+	"name": "erfi",
+	"description": "example",
+	"copyright": "Copyright © 2015, Ilya Yaroshenko",
+	"authors": ["Ilya Yaroshenko"],
+	"dependencies": {
+		"libcerf": {"path": "../../"}
+	}
+}

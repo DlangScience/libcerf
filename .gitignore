@@ -1,0 +1,7 @@
+.dub
+
+__test__library__
+
+*.o
+
+*.a
