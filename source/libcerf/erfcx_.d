@@ -19,7 +19,7 @@ License:
 */
 module libcerf.erfcx_;
 
-import std.math : M_2_SQRTPI;
+import std.math : M_2_SQRTPI, isNaN;
 import core.stdc.math : exp;
 
 /**
@@ -65,13 +65,10 @@ double erfcx(in double x) @safe @nogc nothrow
         }
         return erfcx_y100(400/(4+x));
     }
-    else
-        return 
-            x < -26.7 ? 
-                double.infinity :
-                x < -6.1 ? 
-                    2*exp(x*x) :
-                    2*exp(x*x) - erfcx_y100(400/(4-x));
+    else if(x < -26.7) return double.infinity;
+    else if(x < -6.1)  return 2*exp(x*x);
+    else if(x.isNaN)   return x;
+    else               return 2*exp(x*x) - erfcx_y100(400/(4-x));
 }
 
 /**
@@ -89,6 +86,7 @@ compared to fitting the whole [0,1] interval with a single polynomial.
 private double erfcx_y100(in double y100) @safe @nogc nothrow pure
 in
 {
+    assert(!isNaN(y100));
     assert(cast(uint) y100 >= 0);
     assert(cast(uint) y100 <= 100);
 }
