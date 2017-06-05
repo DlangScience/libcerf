@@ -19,7 +19,7 @@ module libcerf.err_fcts;
 
 import std.complex;
 import std.math : isNaN, copysign, SQRT2, M_1_PI;
-import core.stdc.math : sin, cos, erf;
+import core.stdc.math : sin, cos, erf, fabs;
 
 import libcerf.w_of_z;
 import libcerf.im_w_of_x;
