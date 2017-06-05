@@ -5,3 +5,5 @@ __test__library__
 *.o
 
 *.a
+
+libcerf-test-library

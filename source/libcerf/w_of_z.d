@@ -22,8 +22,8 @@ License:
 module libcerf.w_of_z;
 
 import std.complex;
-import core.stdc.math : exp, fabs, sin, cos;
-import std.math : isNaN, isInfinity, floor;
+import core.stdc.math : exp, fabs, sin, cos, copysign;
+import std.math : isNaN, isInfinity, floor, M_2_SQRTPI;
 
 import libcerf.erfcx_;
 import libcerf.im_w_of_x;
